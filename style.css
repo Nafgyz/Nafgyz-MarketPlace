@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
+
+body { font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+
+/* SCROLLBAR */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* NAVBAR COMPONENTS */
+.logo-box {
+    width: 40px; height: 40px; background-color: #2563EB;
+    border-radius: 12px; display: flex; align-items: center;
+    justify-content: center; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn-login {
+    background: black; color: white; padding: 8px 16px;
+    border-radius: 12px; font-size: 12px; font-weight: 800;
+    transition: 0.3s;
+}
+.btn-login:hover { background: #2563EB; }
+
+.menu-toggle {
+    width: 40px; height: 40px; background: #F9FAFB;
+    border: 1px solid #F3F4F6; border-radius: 12px;
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; gap: 6px;
+}
+
+.dropdown-item {
+    display: flex; align-items: center; gap: 12px; padding: 16px;
+    transition: 0.2s; font-size: 14px; font-weight: 700;
+}
+.dropdown-item:hover { background-color: #F8FAFC; }
+
+/* SEARCH & BANNER */
+.search-input {
+    width: 100%; padding: 16px 24px; border-radius: 20px;
+    border: 2px solid #F3F4F6; outline: none; transition: 0.3s;
+    font-weight: 600; background: white;
+}
+.search-input:focus { border-color: #2563EB; box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1); }
+
+.trust-banner {
+    background: linear-gradient(to right, #14B8A6, #22C55E);
+    border-radius: 32px; padding: 32px; color: white;
+    text-align: center; position: relative; overflow: hidden;
+    margin-bottom: 48px;
+}
+
+/* SECTION & CARDS */
+.section-title {
+    font-weight: 900; font-size: 14px; text-transform: uppercase;
+    display: flex; align-items: center; gap: 8px; margin-bottom: 24px;
+    letter-spacing: 1px; color: #374151;
+}
+
+.item-card {
+    background: white; border-radius: 24px; padding: 14px;
+    display: flex; align-items: center; gap: 16px;
+    border: 1px solid #F3F4F6; transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.item-card:hover { border-color: #2563EB; transform: translateX(5px); }
+
+.best-seller-card {
+    min-width: 160px; background: #111; color: white;
+    padding: 20px 16px; border-radius: 28px; text-align: center;
+    flex-shrink: 0; box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* MODAL COMPONENTS */
+.modal-box {
+    background: white; border-radius: 32px; padding: 32px;
+    max-width: 380px; width: 100%; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+}
+
+.icon-circle {
+    width: 72px; height: 72px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.time-box {
+    background: #EFF6FF; border-radius: 20px;
+    padding: 20px; margin-bottom: 32px;
+}
+
+.btn-main {
+    background: #2563EB; color: white; padding: 12px;
+    border-radius: 14px; font-weight: 800; transition: 0.2s;
+}
+.btn-main:hover { background: #1D4ED8; }
+
+.btn-sub {
+    color: #9CA3AF; font-size: 11px; font-weight: 800;
+    margin-top: 8px; transition: 0.2s;
+}
+.btn-sub:hover { color: #EF4444; }
+
+/* CHECKOUT BUTTONS */
+.btn-checkout {
+    display: flex; align-items: center; justify-content: center;
+    gap: 12px; padding: 14px; border-radius: 16px;
+    font-weight: 800; font-size: 14px; color: white; transition: 0.3s;
+}
+.btn-checkout:hover { transform: scale(1.03); }
+
+.btn-wa { background: #25D366; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); }
+.btn-tg { background: #0088cc; box-shadow: 0 4px 15px rgba(0, 136, 204, 0.3); }
+.btn-tiktok { background: #000; border: 1px solid #333; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); }
+.btn-tiktok i { color: #fe2c55; }
+
+/* ADMIN */
+.admin-panel {
+    display: none; position: fixed; top: 0; right: 0;
+    width: 380px; height: 100%; background: white;
+    z-index: 1000; padding: 40px; border-left: 1px solid #F3F4F6;
+}
+
+.admin-input {
+    width: 100%; padding: 12px; border-radius: 12px;
+    background: #F9FAFB; border: 1px solid #F3F4F6;
+    outline: none; font-weight: 600; font-size: 14px;
+}
+.admin-input:focus { border-color: #2563EB; background: white; }
+
+@media (max-width: 640px) { .admin-panel { width: 100%; } }
